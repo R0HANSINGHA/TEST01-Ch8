@@ -1,52 +1,30 @@
-body {
-  background-color: #111;
-  color: #00ff88;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
+// ✅ Example marks data — replace with real roll numbers and marks later
+const marksData = {
+  "1001": 23,
+  "1002": 19,
+  "1003": 25,
+  "1004": 21,
+  "1005": 17
+};
 
-.container {
-  background-color: #222;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px #00ff88;
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const checkBtn = document.getElementById("checkBtn");
+  checkBtn.addEventListener("click", checkMarks);
+});
 
-input {
-  padding: 10px;
-  width: 80%;
-  font-size: 16px;
-  margin-bottom: 20px;
-  border: 2px solid #00ff88;
-  border-radius: 5px;
-  background-color: #000;
-  color: #00ff88;
-}
+function checkMarks() {
+  const rollInput = document.getElementById("rollInput").value.trim();
+  const result = document.getElementById("result");
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #00ff88;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+  if (rollInput === "") {
+    result.textContent = "⚠️ Please enter a roll number.";
+    return;
+  }
 
-#result {
-  margin-top: 20px;
-  font-size: 18px;
+  if (marksData.hasOwnProperty(rollInput)) {
+    const score = marksData[rollInput];
+    result.textContent = `✅ Roll No: ${rollInput} — Score: ${score} / 25`;
+  } else {
+    result.textContent = "❌ Roll number not found.";
+  }
 }
-
-footer {
-  margin-top: 30px;
-  color: #555;
-}
-
