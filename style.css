@@ -1,6 +1,6 @@
 body {
-  background-color: #111;
-  color: #00ff88;
+  background-color: #ffffff;
+  color: #000000;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -10,10 +10,10 @@ body {
 }
 
 .container {
-  background-color: #222;
+  background-color: #f0f0f0;
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px #00ff88;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 90%;
   max-width: 400px;
@@ -24,20 +24,24 @@ input {
   width: 80%;
   font-size: 16px;
   margin-bottom: 20px;
-  border: 2px solid #00ff88;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #000;
-  color: #00ff88;
+  background-color: #fff;
+  color: #000;
 }
 
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #00ff88;
-  color: #000;
+  background-color: #007BFF;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 #result {
@@ -47,7 +51,6 @@ button {
 
 footer {
   margin-top: 30px;
-  color: #555;
+  color: #777;
 }
-
 
