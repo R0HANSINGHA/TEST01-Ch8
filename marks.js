@@ -1,10 +1,22 @@
 // ✅ Example marks data — replace with real roll numbers and marks later
 const marksData = {
-  "1001": 23,
-  "1002": 19,
-  "1003": 25,
-  "1004": 21,
-  "1005": 17
+  "20": 4,
+  "4": 8,
+  "7": 4,
+  "12": 8,
+  "9": 4,
+  "31": 1,
+  "17": 3,
+  "6": 13,
+  "15": 3,
+  "5": 13,
+  "2": 9,
+  "8": 2,
+  "1": 20,
+  "11": 20,
+  "14": 3
+  
+  
 };
 
 document.addEventListener("DOMContentLoaded", () => {
