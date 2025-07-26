@@ -23,7 +23,7 @@ function checkMarks() {
 
   if (marksData.hasOwnProperty(rollInput)) {
     const score = marksData[rollInput];
-    result.textContent = `✅ Roll No: ${rollInput} — Score: ${score} / 25`;
+    result.textContent = ` Roll No: ${rollInput} — Score: ${score} / 25`;
   } else {
     result.textContent = "❌ Roll number not found.";
   }
